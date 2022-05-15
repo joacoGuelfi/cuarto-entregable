@@ -8,6 +8,8 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a9ea7dd4a7.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -30,19 +32,19 @@
 
     <section class="galeria">
     <section class="galeriaGrande">
-        <img src="images/galeria-grande.jpg" alt="">
+        <img class="foto" src="images/galeria-grande.jpg" alt="">
     </section>
 
     <section class="galeriaChica">
-        <img src="images/galeria-1.jpg" alt="">
-        <img src="images/galeria-2.jpg" alt="">
-        <img src="images/galeria-3.jpeg" alt="">
-        <img src="images/galeria-1.jpg" alt="">
+        <img class="foto" src="images/galeria-1.jpg" alt="">
+        <img class="foto" src="images/galeria-2.jpg" alt="">
+        <img class="foto" src="images/galeria-3.jpeg" alt="">
+        <img class="foto" src="images/galeria-1.jpg" alt="">
     </section>
 </section>
     <!-- Cajas con informacion -->
-    <section class="cajas">
-        <div class="cajitas">
+    <section class="cajas" data-aos="fade-down">
+        <div class="cajitas ">
             <h2>Moldes</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste amet aperiam, tempore temporibus
@@ -109,6 +111,13 @@
             </ul>
         </div>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

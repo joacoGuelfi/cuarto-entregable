@@ -87,7 +87,7 @@ header nav ul a {
     border: #5A352A solid 1px;
     margin: 5px;
     width: 250px;
-    height: 150px;
+    height: 150px;  
 }
 
 /* Cajas */
@@ -410,4 +410,14 @@ footer h3 {
         justify-content: space-around;
         flex-direction: row;
     }
+}
+
+/* Agregando animaciones */
+
+.header nav ul li a:hover{
+    color: #5A352A;
+}
+
+.foto:hover{
+    filter: grayscale(1);
 }
