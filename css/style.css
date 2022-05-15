@@ -87,7 +87,7 @@ header nav ul a {
     border: #5A352A solid 1px;
     margin: 5px;
     width: 250px;
-    height: 150px;  
+    height: 150px;
 }
 
 /* Cajas */
@@ -316,7 +316,7 @@ footer h3 {
     margin-bottom: 30px;
     text-align: center;
     padding: 5px;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 3px #666;
 
 }
 
@@ -373,40 +373,46 @@ footer h3 {
     color: white;
     border-radius: 10px;
     width: fit-content;
+    box-shadow: 0 2px #666;
+
 }
 
 /* Media queri para item.html */
 
 @media screen and (max-width: 480px) {
-    .galeriaVertical{
+    .galeriaVertical {
         display: none;
     }
-    .item{
+
+    .item {
         display: grid;
-        grid-template-areas: 
-        "imga imga"
-        "detalle detalle";
+        grid-template-areas:
+            "imga imga"
+            "detalle detalle";
     }
-    .imga img{
+
+    .imga img {
         width: 300px;
         margin-left: 40px;
         margin-bottom: 20px;
         border: #5A352A 1px solid;
     }
-    .detalle{
+
+    .detalle {
         max-width: 90%;
         margin-left: 10px;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-    .item{
+    .item {
         display: grid;
-        grid-template-areas: 
-        "imga detalle" 
-        "galeriaVert detalle";
+        grid-template-areas:
+            "imga detalle"
+            "galeriaVert detalle";
     }
-    .galeriaVertical{
+
+    .galeriaVertical {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -415,12 +421,12 @@ footer h3 {
 
 /* Agregando animaciones */
 
-.header nav ul li a:hover{
+.header nav ul li a:hover {
     color: #5A352A;
 }
 
-.foto:hover{
-    filter: grayscale(1);
+.foto:hover {
+    filter: grayscale(70%);
 }
 
 .productosUno .prod a:hover {
@@ -428,7 +434,17 @@ footer h3 {
 }
 
 .prod a:active {
-  background-color: #8b5d4f;
-  box-shadow: 0 1px #666;
-  transform: translateY(4px);
+    background-color: #8b5d4f;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.item .detalle a:hover {
+    background-color: #8b5d4f;
+}
+
+.item .detalle a:active {
+    background-color: #8b5d4f;
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
 }
