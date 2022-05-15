@@ -316,7 +316,8 @@ footer h3 {
     margin-bottom: 30px;
     text-align: center;
     padding: 5px;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 0 5px #666;
+
 }
 
 /* Estilo a item.html */
@@ -420,4 +421,14 @@ footer h3 {
 
 .foto:hover{
     filter: grayscale(1);
+}
+
+.productosUno .prod a:hover {
+    background-color: #8b5d4f;
+}
+
+.prod a:active {
+  background-color: #8b5d4f;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
 }
